@@ -1,0 +1,28 @@
+import java.util.*;
+class Demo{
+
+	public static void main(String[]args){
+
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String:");
+		String s=sc.next();
+		System.out.println("Enter character to replace:");
+		char replace=sc.next().charAt(0);
+		System.out.println("Enter character to put:");
+		char cha=sc.next().charAt(0);
+		int len=s.length();
+		String s1="";
+
+		for(int i=0;i<len;i++){
+
+			char ch=s.charAt(i);
+			if(ch==replace){
+				s1=s1+cha;	
+			}else{
+
+				s1=s1+ch;
+			}
+		}
+		System.out.println(s1);
+	}
+}
